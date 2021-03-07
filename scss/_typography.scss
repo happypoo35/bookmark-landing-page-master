@@ -1,0 +1,131 @@
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: $Grayish-Blue;
+
+  @include tablet {
+    font-size: 0.9375rem;
+  }
+}
+
+h1,
+h2,
+h4,
+.link-header,
+.question-text {
+  color: $Very-Dark-Blue;
+}
+
+h1,
+h2,
+h4,
+label,
+.joined {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 52px;
+
+  @include tablet {
+    font-size: 1.875rem;
+    line-height: 40px;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+
+  @include tablet {
+    font-size: 1.5rem;
+  }
+
+  &.white {
+    color: white;
+  }
+}
+
+h4 {
+  font-size: 1.25rem;
+  letter-spacing: 0.014em;
+}
+
+p {
+  line-height: 1.5;
+
+  @include tablet {
+    line-height: 1.67;
+  }
+}
+
+.answer p {
+  font-size: 1rem;
+  line-height: 2.25;
+  letter-spacing: 0.006em;
+
+  @include tablet {
+    font-size: 0.9375rem;
+    line-height: 2;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  font-size: 0.625rem;
+  font-style: italic;
+  color: white;
+}
+
+span {
+  &.version {
+    font-size: 0.9375rem;
+  }
+
+  &.joined {
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.384em;
+    color: rgba(white, 0.8);
+
+    @include tablet {
+      letter-spacing: 0.31em;
+    }
+  }
+}
+
+.link {
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+
+  &:hover {
+    color: $Soft-Red;
+  }
+
+  &-footer {
+    color: rgba(white, 0.8);
+
+    @include tablet {
+      font-size: 0.9375rem;
+    }
+  }
+
+  &-modal {
+    color: white;
+    font-size: 1.25rem;
+  }
+}
+
+.social-link {
+  font-size: 1.5rem;
+  color: white;
+
+  &:hover {
+    color: $Soft-Red;
+  }
+}

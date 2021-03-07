@@ -1,0 +1,59 @@
+footer {
+  background: $Very-Dark-Blue;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    @include tablet {
+      flex-direction: column;
+      justify-content: unset;
+      padding-top: 2.5rem;
+      padding-bottom: 2.75rem;
+    }
+  }
+
+  .logo {
+    margin-right: 4rem;
+    display: flex;
+
+    @include tablet {
+      margin-right: unset;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  svg {
+    path {
+      fill: white;
+    }
+  }
+
+  nav {
+    flex: 1;
+
+    @include tablet {
+      display: grid;
+      place-items: center;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    & > * + * {
+      margin-left: 2.75rem;
+
+      @include tablet {
+        margin-left: unset;
+      }
+    }
+  }
+
+  .social {
+    a:last-child {
+      margin-left: 2.5rem;
+    }
+  }
+}
