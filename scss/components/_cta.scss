@@ -92,9 +92,8 @@
   i {
     z-index: 1;
     position: absolute;
-    top: 50%;
+    top: 1.125rem;
     right: 1rem;
-    transform: translateY(-50%);
     color: $Soft-Red;
     pointer-events: none;
     opacity: 0;
